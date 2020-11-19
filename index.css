@@ -5,10 +5,26 @@ body {
 body div#twitter {
   position: absolute;
   top: 20;
-  right: 80;
 }
-body div#twitter img {
-  max-width: 40px;
+@media only screen and (max-width: 600px) {
+  body div#twitter {
+    right: 60;
+  }
+}
+@media only screen and (min-width: 601px) {
+  body div#twitter {
+    right: 80;
+  }
+}
+@media only screen and (max-width: 600px) {
+  body div#twitter img {
+    max-width: 30px;
+  }
+}
+@media only screen and (min-width: 601px) {
+  body div#twitter img {
+    max-width: 40px;
+  }
 }
 body div#twitter img:hover {
   cursor: pointer;
@@ -20,8 +36,17 @@ body div#github {
   right: 20;
 }
 body div#github img {
-  max-width: 40px;
   opacity: 0.9;
+}
+@media only screen and (max-width: 600px) {
+  body div#github img {
+    max-width: 30px;
+  }
+}
+@media only screen and (min-width: 601px) {
+  body div#github img {
+    max-width: 40px;
+  }
 }
 body div#github img:hover {
   cursor: pointer;

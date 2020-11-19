@@ -4,23 +4,40 @@ body {
   div#twitter {
     position: absolute;
     top: 20;
-    right: 80;
+      @media only screen and (max-width: 600px) {
+        right: 60;
+      }
+      @media only screen and (min-width: 601px) {
+        right: 80;
+      }
     img {
-      max-width: 40px;
-      &:hover{
+      @media only screen and (max-width: 600px) {
+        max-width: 30px;
+      }
+      @media only screen and (min-width: 601px) {
+        max-width: 40px;
+      }
+      &:hover {
         cursor: pointer;
         opacity: 0.6;
       }
     }
+  }
+  @media only screen and (min-width: 601px) {
   }
   div#github {
     position: absolute;
     top: 20;
     right: 20;
     img {
-      max-width: 40px;
-        opacity: 0.9;
-      &:hover{
+      @media only screen and (max-width: 600px) {
+        max-width: 30px;
+      }
+      @media only screen and (min-width: 601px) {
+        max-width: 40px;
+      }
+      opacity: 0.9;
+      &:hover {
         cursor: pointer;
         opacity: 0.6;
       }
