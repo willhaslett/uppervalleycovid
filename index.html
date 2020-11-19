@@ -1,0 +1,62 @@
+<meta charset="utf-8" /> 
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+  <title>Covid-19 Upper Valley</title>
+  <link rel="stylesheet" href="index.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-ER5H1E7NSX"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+    gtag('config', 'G-ER5H1E7NSX');
+  </script>
+</head>
+
+<body>
+  <div id="twitter">
+    <img src="twitter.png" onclick="window.location.assign('https://twitter.com/willhaslett');" />
+  </div>
+  <div id="github">
+    <img src="github.png" onclick="window.location.assign('https://github.com/willhaslett/covid-19-growth');" />
+  </div>
+  <div id="header">
+    <img src="counties.svg" class="counties" />
+    <div id="title-container">
+      <div id="title">
+        The Upper Connecticut River Valley
+      </div>
+      <div id="subtitle">
+        Daily Covid-19 cases per 100,000 residents
+      </div>
+      <div id="source">
+        Data source: The New York Times
+      </div>
+    </div>
+  </div>
+  <div id="charts-container">
+    <div class="chart-column">
+      <div class="chart-title vermont">
+        Orange County, VT
+      </div>
+      <img src="orange_vermont.svg" class="chart" />
+      <div class="chart-title vermont">
+        Windsor County, VT
+      </div>
+      <img src="windsor_vermont.svg" class="chart" />
+    </div>
+    <div class="chart-column">
+      <div class="chart-title new-hampshire">
+        Grafton County, NH
+      </div>
+      <img src="grafton_new_hampshire.svg" class="chart" />
+      <div class="chart-title new-hampshire">
+        Sullivan County , NH
+      </div>
+      <img src="sullivan_new_hampshire.svg" class="chart" />
+    </div>
+  </div>
+</body>
+
+</html>
