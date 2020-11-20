@@ -7,8 +7,6 @@
     %link{href: 'index.css', rel: 'stylesheet'}
     %link{href: 'switch.css', rel: 'stylesheet'}
     %meta{ontent: 'width=device-width, initial-scale=1.0', name: 'viewport'}
-    %script{async: '', src: 'https://www.googletagmanager.com/gtag/js?id=G-ER5H1E7NSX'}
-    %script{src: 'index.js'}
     :javascript
       window.dataLayer = window.dataLayer || [];
       function gtag() { dataLayer.push(arguments); }
@@ -29,11 +27,11 @@
             .label Covid-19 cases
             .label Total
           #switches 
-            .switch-container
+            #switch-count-of.switch-container
               %label.switch
                 %input(type='checkbox')
                 %span(class='slider round')
-            .switch-container
+            #switch-measure.switch-container
               %label.switch
                 %input(type='checkbox')
                 %span(class='slider round')
@@ -57,3 +55,6 @@
         .chart-title.new-hampshire
           Sullivan County , NH
         %img.chart{src: 'sullivan_new_hampshire.svg'}
+
+%script{async: '', src: 'https://www.googletagmanager.com/gtag/js?id=G-ER5H1E7NSX'}
+%script{src: 'index.js'}
