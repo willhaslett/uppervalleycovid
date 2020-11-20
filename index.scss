@@ -4,12 +4,12 @@ body {
   div#twitter {
     position: absolute;
     top: 20;
-      @media only screen and (max-width: 600px) {
-        right: 60;
-      }
-      @media only screen and (min-width: 601px) {
-        right: 80;
-      }
+    @media only screen and (max-width: 600px) {
+      right: 60;
+    }
+    @media only screen and (min-width: 601px) {
+      right: 80;
+    }
     img {
       @media only screen and (max-width: 600px) {
         max-width: 30px;
@@ -56,6 +56,37 @@ body {
     div#title-container {
       display: flex;
       flex-direction: column;
+      #switches-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-top: 15px;
+        #label-left,
+        #label-right,
+        #switches {
+          display: flex;
+          flex-direction: column;
+          align-items: baseline;
+          height: 90px;
+          margin-bottom: 10px;
+          .label {
+            box-sizing: border-box;
+            display: inline-block;
+            height: 60px;
+            width: 200px;
+            padding: 4px;
+          }
+          .switch-container {
+            height: 60px;
+          }
+        }
+        #label-left {
+          text-align: right;
+        }
+        #label-right {
+          text-align: left;
+        }
+      }
       @media only screen and (max-width: 600px) {
         div#title {
           padding-top: 7px;
@@ -66,8 +97,9 @@ body {
         }
         div#source {
           font-size: 12px;
+          font-style: italic;;
           text-align: center;
-          color: #333;
+          color: #555;
         }
         div#subtitle {
           padding-bottom: 7px;
@@ -87,11 +119,12 @@ body {
         div#source {
           padding-bottom: 15px;
           font-size: 16px;
+          font-style: italic;;
           text-align: center;
-          color: #333;
+          color: #555;
         }
         div#subtitle {
-          padding-bottom: 10px;
+          padding-bottom: 12px;
           font-size: 18px;
           text-align: center;
           color: #333;

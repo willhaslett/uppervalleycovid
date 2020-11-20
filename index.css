@@ -67,6 +67,41 @@ body div#header div#title-container {
   display: flex;
   flex-direction: column;
 }
+body div#header div#title-container #switches-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 15px;
+}
+body div#header div#title-container #switches-container #label-left,
+body div#header div#title-container #switches-container #label-right,
+body div#header div#title-container #switches-container #switches {
+  display: flex;
+  flex-direction: column;
+  align-items: baseline;
+  height: 90px;
+  margin-bottom: 10px;
+}
+body div#header div#title-container #switches-container #label-left .label,
+body div#header div#title-container #switches-container #label-right .label,
+body div#header div#title-container #switches-container #switches .label {
+  box-sizing: border-box;
+  display: inline-block;
+  height: 60px;
+  width: 200px;
+  padding: 4px;
+}
+body div#header div#title-container #switches-container #label-left .switch-container,
+body div#header div#title-container #switches-container #label-right .switch-container,
+body div#header div#title-container #switches-container #switches .switch-container {
+  height: 60px;
+}
+body div#header div#title-container #switches-container #label-left {
+  text-align: right;
+}
+body div#header div#title-container #switches-container #label-right {
+  text-align: left;
+}
 @media only screen and (max-width: 600px) {
   body div#header div#title-container div#title {
     padding-top: 7px;
@@ -77,8 +112,9 @@ body div#header div#title-container {
   }
   body div#header div#title-container div#source {
     font-size: 12px;
+    font-style: italic;
     text-align: center;
-    color: #333;
+    color: #555;
   }
   body div#header div#title-container div#subtitle {
     padding-bottom: 7px;
@@ -98,11 +134,12 @@ body div#header div#title-container {
   body div#header div#title-container div#source {
     padding-bottom: 15px;
     font-size: 16px;
+    font-style: italic;
     text-align: center;
-    color: #333;
+    color: #555;
   }
   body div#header div#title-container div#subtitle {
-    padding-bottom: 10px;
+    padding-bottom: 12px;
     font-size: 18px;
     text-align: center;
     color: #333;

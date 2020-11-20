@@ -1,0 +1,1 @@
+ruby hamlwatch.rb . uvcovid

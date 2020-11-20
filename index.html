@@ -1,67 +1,85 @@
-<meta content='utf-8' name='charset'>
-<!DOCTYPE html>
+<meta content="utf-8" name="charset" />
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html>
 <head>
-<meta charset='utf-8'>
+<meta charset="utf-8" />
 <title>Covid-19 Upper Valley</title>
-<link href='index.css' rel='stylesheet'>
-<link href='switch.css' rel='stylesheet'>
-<meta name='viewport' ontent='width=device-width, initial-scale=1.0'>
-<script async='' src='https://www.googletagmanager.com/gtag/js?id=G-ER5H1E7NSX'></script>
-<script src='index.js'></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag() { dataLayer.push(arguments); }
-  gtag('js', new Date());
-  gtag('config', 'G-ER5H1E7NSX');
+<link href="index.css" rel="stylesheet" />
+<link href="switch.css" rel="stylesheet" />
+<meta name="viewport" ontent="width=device-width, initial-scale=1.0" />
+<script async="" src="https://www.googletagmanager.com/gtag/js?id=G-ER5H1E7NSX"></script>
+<script src="index.js"></script>
+<script type="text/javascript">
+  //<![CDATA[
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+    gtag('config', 'G-ER5H1E7NSX');
+  //]]>
 </script>
 </head>
 <body>
-<div id='twitter'>
-<img onclick='goToTwitter()' src='twitter.png'>
+<div id="twitter">
+<img onclick="goToTwitter()" src="twitter.png" />
 </div>
-<div id='github'>
-<img onclick='goToGitHub()' src='github.png'>
+<div id="github">
+<img onclick="goToGitHub()" src="github.png" />
 </div>
-<div id='header'>
-<img class='counties' src='counties.svg'>
-<div id='title-container'>
-<div id='title'>
+<div id="header">
+<img class="counties" src="counties.svg" />
+<div id="title-container">
+<div id="title">
 The Upper Connecticut River Valley
 </div>
-<div id='source'>
+<div id="switches-container">
+<div id="label-left">
+<div class="label">Covid-19 cases</div>
+<div class="label">Total</div>
+</div>
+<div id="switches">
+<div class="switch-container">
+<label class="switch">
+<input type="checkbox" />
+<span class="slider round"></span>
+</label>
+</div>
+<div class="switch-container">
+<label class="switch">
+<input type="checkbox" />
+<span class="slider round"></span>
+</label>
+</div>
+</div>
+<div id="label-right">
+<div class="label">Deaths</div>
+<div class="label">Per 100,000 residents</div>
+</div>
+</div>
+<div id="source">
 Data source: The New York Times
 </div>
-<div id='subtitle'>
-<span class='switch-label'>Cases per day</span>
-<label class='switch'>
-<input type='checkbox'>
-<span class='slider round'></span>
-</label>
-<span class='switch-label'>Cases per day per 100,000 residents</span>
 </div>
 </div>
-</div>
-<div id='charts-container'>
-<div class='chart-column'>
-<div class='chart-title vermont'>
+<div id="charts-container">
+<div class="chart-column">
+<div class="chart-title vermont">
 Orange County, VT
 </div>
-<img class='chart' src='orange_vermont.svg'>
-<div class='chart-title vermont'>
+<img class="chart" src="orange_vermont.svg" />
+<div class="chart-title vermont">
 Windsor County, VT
 </div>
-<img class='chart' src='windsor_vermont.svg'>
+<img class="chart" src="windsor_vermont.svg" />
 </div>
-<div class='chart-column'>
-<div class='chart-title new-hampshire'>
+<div class="chart-column">
+<div class="chart-title new-hampshire">
 Grafton County, NH
 </div>
-<img class='chart' src='grafton_new_hampshire.svg'>
-<div class='chart-title new-hampshire'>
+<img class="chart" src="grafton_new_hampshire.svg" />
+<div class="chart-title new-hampshire">
 Sullivan County , NH
 </div>
-<img class='chart' src='sullivan_new_hampshire.svg'>
+<img class="chart" src="sullivan_new_hampshire.svg" />
 </div>
 </div>
 </body>

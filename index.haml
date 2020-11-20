@@ -24,14 +24,24 @@
       #title-container
         #title
           The Upper Connecticut River Valley
+        #switches-container
+          #label-left
+            .label Covid-19 cases
+            .label Total
+          #switches 
+            .switch-container
+              %label.switch
+                %input(type='checkbox')
+                %span(class='slider round')
+            .switch-container
+              %label.switch
+                %input(type='checkbox')
+                %span(class='slider round')
+          #label-right
+            .label Deaths
+            .label Per 100,000 residents
         #source
           Data source: The New York Times
-        #subtitle
-          %span.switch-label Cases per day
-          %label.switch
-            %input(type='checkbox')
-            %span(class='slider round')
-          %span.switch-label Cases per day per 100,000 residents
     #charts-container
       .chart-column
         .chart-title.vermont
