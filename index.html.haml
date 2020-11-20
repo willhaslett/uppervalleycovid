@@ -5,6 +5,7 @@
     %meta{charset: 'utf-8'}
     %title Covid-19 Upper Valley
     %link{href: 'index.css', rel: 'stylesheet'}
+    %link{href: 'switch.css', rel: 'stylesheet'}
     %meta{ontent: 'width=device-width, initial-scale=1.0', name: 'viewport'}
     %script{async: '', src: 'https://www.googletagmanager.com/gtag/js?id=G-ER5H1E7NSX'}
     %script{src: 'index.js'}
@@ -17,20 +18,20 @@
     #twitter
       %img{onclick: 'goToTwitter()', src: 'twitter.png'}
     #github
-      %img{onclick: 'goToGitHub', src: 'github.png'}
+      %img{onclick: 'goToGitHub()', src: 'github.png'}
     #header
       %img.counties{src: 'counties.svg'}
       #title-container
         #title
           The Upper Connecticut River Valley
-        #subtitle
-          Daily Covid-19 cases per 100,000 residents
         #source
           Data source: The New York Times
-        %div
+        #subtitle
+          %span.switch-label Cases per day
           %label.switch
             %input(type='checkbox')
             %span(class='slider round')
+          %span.switch-label Cases per day per 100,000 residents
     #charts-container
       .chart-column
         .chart-title.vermont

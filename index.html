@@ -5,6 +5,7 @@
 <meta charset='utf-8'>
 <title>Covid-19 Upper Valley</title>
 <link href='index.css' rel='stylesheet'>
+<link href='switch.css' rel='stylesheet'>
 <meta name='viewport' ontent='width=device-width, initial-scale=1.0'>
 <script async='' src='https://www.googletagmanager.com/gtag/js?id=G-ER5H1E7NSX'></script>
 <script src='index.js'></script>
@@ -20,7 +21,7 @@
 <img onclick='goToTwitter()' src='twitter.png'>
 </div>
 <div id='github'>
-<img onclick='goToGitHub' src='github.png'>
+<img onclick='goToGitHub()' src='github.png'>
 </div>
 <div id='header'>
 <img class='counties' src='counties.svg'>
@@ -28,17 +29,16 @@
 <div id='title'>
 The Upper Connecticut River Valley
 </div>
-<div id='subtitle'>
-Daily Covid-19 cases per 100,000 residents
-</div>
 <div id='source'>
 Data source: The New York Times
 </div>
-<div>
+<div id='subtitle'>
+<span class='switch-label'>Cases per day</span>
 <label class='switch'>
 <input type='checkbox'>
 <span class='slider round'></span>
 </label>
+<span class='switch-label'>Cases per day per 100,000 residents</span>
 </div>
 </div>
 </div>

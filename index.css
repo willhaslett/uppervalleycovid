@@ -75,14 +75,14 @@ body div#header div#title-container {
     text-align: center;
     color: #333;
   }
-  body div#header div#title-container div#subtitle {
-    padding-bottom: 7px;
-    font-size: 16px;
+  body div#header div#title-container div#source {
+    font-size: 12px;
     text-align: center;
     color: #333;
   }
-  body div#header div#title-container div#source {
-    font-size: 12px;
+  body div#header div#title-container div#subtitle {
+    padding-bottom: 7px;
+    font-size: 16px;
     text-align: center;
     color: #333;
   }
@@ -95,14 +95,15 @@ body div#header div#title-container {
     text-align: center;
     color: #333;
   }
-  body div#header div#title-container div#subtitle {
-    padding-bottom: 10px;
-    font-size: 18px;
+  body div#header div#title-container div#source {
+    padding-bottom: 15px;
+    font-size: 16px;
     text-align: center;
     color: #333;
   }
-  body div#header div#title-container div#source {
-    font-size: 16px;
+  body div#header div#title-container div#subtitle {
+    padding-bottom: 10px;
+    font-size: 18px;
     text-align: center;
     color: #333;
   }
