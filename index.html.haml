@@ -1,0 +1,48 @@
+%meta{name: 'charset', content: 'utf-8'}
+!!!
+%html
+  %head
+    %meta{charset: 'utf-8'}
+    %title Covid-19 Upper Valley
+    %link{href: 'index.css', rel: 'stylesheet'}
+    %meta{ontent: 'width=device-width, initial-scale=1.0', name: 'viewport'}
+    %script{async: '', src: 'https://www.googletagmanager.com/gtag/js?id=G-ER5H1E7NSX'}
+    %script{src: 'index.js'}
+    :javascript
+      window.dataLayer = window.dataLayer || [];
+      function gtag() { dataLayer.push(arguments); }
+      gtag('js', new Date());
+      gtag('config', 'G-ER5H1E7NSX');
+  %body
+    #twitter
+      %img{onclick: 'goToTwitter()', src: 'twitter.png'}
+    #github
+      %img{onclick: 'goToGitHub', src: 'github.png'}
+    #header
+      %img.counties{src: 'counties.svg'}
+      #title-container
+        #title
+          The Upper Connecticut River Valley
+        #subtitle
+          Daily Covid-19 cases per 100,000 residents
+        #source
+          Data source: The New York Times
+        %div
+          %label.switch
+            %input(type='checkbox')
+            %span(class='slider round')
+    #charts-container
+      .chart-column
+        .chart-title.vermont
+          Orange County, VT
+        %img.chart{src: 'orange_vermont.svg'}
+        .chart-title.vermont
+          Windsor County, VT
+        %img.chart{src: 'windsor_vermont.svg'}
+      .chart-column
+        .chart-title.new-hampshire
+          Grafton County, NH
+        %img.chart{src: 'grafton_new_hampshire.svg'}
+        .chart-title.new-hampshire
+          Sullivan County , NH
+        %img.chart{src: 'sullivan_new_hampshire.svg'}
