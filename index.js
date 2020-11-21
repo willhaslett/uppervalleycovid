@@ -33,6 +33,7 @@ function toggleMeasure() {
 }
 
 (function () {
+  document.querySelectorAll('input[type=checkbox]').forEach((el) => el.checked = false);
   updateVisibility();
   var switchCountOf = document.getElementById('switch-count-of');
   var switchMeasure = document.getElementById('switch-measure');
