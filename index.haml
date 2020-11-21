@@ -13,8 +13,6 @@
       gtag('js', new Date());
       gtag('config', 'G-ER5H1E7NSX');
   %body
-    #twitter
-      %img{onclick: 'goToTwitter()', src: 'twitter.png'}
     #github
       %img{onclick: 'goToGitHub()', src: 'github.png'}
     #header
@@ -42,19 +40,27 @@
           Data source: The New York Times
     #charts-container
       .chart-column
-        .chart-title.vermont
-          Orange County, VT
-        %img.chart{src: 'orange_vermont.svg'}
-        .chart-title.vermont
-          Windsor County, VT
-        %img.chart{src: 'windsor_vermont.svg'}
+        .chart-title.vt Orange County, VT
+        %img.cases.total.chart{src: 'charts/orange_vermont_cases.svg'}
+        %img.cases.adj.chart{src: 'charts/orange_vermont_cases_adjusted.svg'}
+        %img.deaths.total.chart{src: 'charts/orange_vermont_deaths.svg'}
+        %img.deaths.adj.chart{src: 'charts/orange_vermont_deaths_adjusted.svg'}
+        .chart-title.vt Windsor County, VT
+        %img.cases.total.chart{src: 'charts/windsor_vermont_cases.svg'}
+        %img.cases.adj.chart{src: 'charts/windsor_vermont_cases_adjusted.svg'}
+        %img.deaths.total.chart{src: 'charts/windsor_vermont_deaths.svg'}
+        %img.deaths.adj.chart{src: 'charts/windsor_vermont_deaths_adjusted.svg'}
       .chart-column
-        .chart-title.new-hampshire
-          Grafton County, NH
-        %img.chart{src: 'grafton_new_hampshire.svg'}
-        .chart-title.new-hampshire
-          Sullivan County , NH
-        %img.chart{src: 'sullivan_new_hampshire.svg'}
+        .chart-title.nh Grafton County, NH
+        %img.cases.total.chart{src: 'charts/grafton_new_hampshire_cases.svg'}
+        %img.cases.adj.chart{src: 'charts/grafton_new_hampshire_cases_adjusted.svg'}
+        %img.deaths.total.chart{src: 'charts/grafton_new_hampshire_deaths.svg'}
+        %img.deaths.adj.chart{src: 'charts/grafton_new_hampshire_deaths_adjusted.svg'}
+        .chart-title.nh Sullivan County, NH
+        %img.cases.total.chart{src: 'charts/sullivan_new_hampshire_cases.svg'}
+        %img.cases.adj.chart{src: 'charts/sullivan_new_hampshire_cases_adjusted.svg'}
+        %img.deaths.total.chart{src: 'charts/sullivan_new_hampshire_deaths.svg'}
+        %img.deaths.adj.chart{src: 'charts/sullivan_new_hampshire_deaths_adjusted.svg'}
 
 %script{async: '', src: 'https://www.googletagmanager.com/gtag/js?id=G-ER5H1E7NSX'}
 %script{src: 'index.js'}

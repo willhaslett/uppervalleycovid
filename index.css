@@ -2,34 +2,6 @@ body {
   font-family: Arial;
   padding: 10px;
 }
-body div#twitter {
-  position: absolute;
-  top: 20;
-}
-@media only screen and (max-width: 600px) {
-  body div#twitter {
-    right: 60;
-  }
-}
-@media only screen and (min-width: 601px) {
-  body div#twitter {
-    right: 80;
-  }
-}
-@media only screen and (max-width: 600px) {
-  body div#twitter img {
-    max-width: 30px;
-  }
-}
-@media only screen and (min-width: 601px) {
-  body div#twitter img {
-    max-width: 40px;
-  }
-}
-body div#twitter img:hover {
-  cursor: pointer;
-  opacity: 0.6;
-}
 body div#github {
   position: absolute;
   top: 20;
@@ -60,8 +32,8 @@ body div#header {
 }
 body div#header .counties {
   display: inline-block;
-  width: 200px;
-  max-width: 40%;
+  width: 140;
+  max-width: 30%;
 }
 body div#header div#title-container {
   display: flex;
@@ -152,14 +124,13 @@ body div#charts-container {
   width: 100%;
 }
 @media only screen and (max-width: 600px) {
-  body div#charts-container .vermont {
+  body div#charts-container .vt {
     color: #1f77b4;
   }
-  body div#charts-container .new-hampshire {
+  body div#charts-container .nh {
     color: #871f78;
   }
   body div#charts-container .chart {
-    display: block;
     width: 100%;
   }
   body div#charts-container .chart-column {
@@ -171,14 +142,13 @@ body div#charts-container {
   }
 }
 @media only screen and (min-width: 601px) {
-  body div#charts-container .vermont {
+  body div#charts-container .vt {
     color: #1f77b4;
   }
-  body div#charts-container .new-hampshire {
+  body div#charts-container .nh {
     color: #871f78;
   }
   body div#charts-container .chart {
-    display: block;
     width: 100%;
   }
   body div#charts-container .chart-column {
@@ -190,6 +160,10 @@ body div#charts-container {
     padding-top: 30px;
     font-size: 16px;
   }
+}
+
+.hidden {
+  display: none;
 }
 
 /*# sourceMappingURL=index.css.map */

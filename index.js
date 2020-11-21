@@ -1,19 +1,39 @@
-function goToTwitter() {
-  window.location.assign('https://twitter.com/willhaslett');
-}
+var showTotal = true;
+var showCases = true;
 
 function goToGitHub() {
-  window.location.assign('https://github.com/willhaslett/covid-19-growth');
+  window.location.assign('https://github.com/willhaslett/covid-19-growth/blob/master/README.md');
+}
+
+function updateVisibility() {
+  document.querySelectorAll('.chart').forEach((el) => el.style.display = 'none');
+  switch (`${showTotal}${showCases}`) {
+    case 'truetrue':
+      document.querySelectorAll('.total.cases').forEach((el) => el.style.display = 'block');
+      break;
+    case 'truefalse':
+      document.querySelectorAll('.total.deaths').forEach((el) => el.style.display = 'block');
+      break;
+    case 'falsetrue':
+      document.querySelectorAll('.adj.cases').forEach((el) => el.style.display = 'block');
+      break;
+    case 'falsefalse':
+      document.querySelectorAll('.adj.deaths').forEach((el) => el.style.display = 'block');
+  }
 }
 
 function toggleCountOf() {
-  console.log('toggling count-of');
+  showCases = !showCases;
+  updateVisibility();
 }
+
 function toggleMeasure() {
-  console.log('toggling measure');
+  showTotal = !showTotal;
+  updateVisibility();
 }
 
 (function () {
+  updateVisibility();
   var switchCountOf = document.getElementById('switch-count-of');
   var switchMeasure = document.getElementById('switch-measure');
   switchCountOf.addEventListener('mousedown', toggleCountOf);
