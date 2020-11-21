@@ -47,14 +47,17 @@ body {
           display: flex;
           flex-direction: column;
           align-items: baseline;
-          height: 90px;
+          height: 65px;
           margin-bottom: 10px;
           .label {
-            box-sizing: border-box;
+            // border: 1px solid #1f77b4;
             display: inline-block;
+            box-sizing: border-box;
             height: 60px;
-            width: 200px;
-            padding: 4px;
+            width: 150px;
+            padding-top: 3px;
+            margin-right: 5px;
+            margin-left: 5px;
           }
           .switch-container {
             height: 60px;
