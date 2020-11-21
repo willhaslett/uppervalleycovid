@@ -1,6 +1,7 @@
-venv/
+env/
 .vscode/
 *.pyc
 *.swp
 __pycache__/
 .aws_secrets
+charts/*
