@@ -4,23 +4,27 @@ body {
 }
 body div#github {
   position: absolute;
-  top: 20;
-  right: 20;
-}
-body div#github img {
   opacity: 0.9;
 }
 @media only screen and (max-width: 600px) {
+  body div#github {
+    top: 15;
+    right: 15;
+  }
   body div#github img {
     max-width: 30px;
   }
 }
 @media only screen and (min-width: 601px) {
+  body div#github {
+    top: 20;
+    right: 20;
+  }
   body div#github img {
     max-width: 40px;
   }
 }
-body div#github img:hover {
+body div#github:hover {
   cursor: pointer;
   opacity: 0.6;
 }

@@ -3,20 +3,24 @@ body {
   padding: 10px;
   div#github {
     position: absolute;
-    top: 20;
-    right: 20;
-    img {
-      @media only screen and (max-width: 600px) {
+    @media only screen and (max-width: 600px) {
+      top: 15;
+      right: 15;
+      img {
         max-width: 30px;
       }
-      @media only screen and (min-width: 601px) {
+    }
+    @media only screen and (min-width: 601px) {
+      top: 20;
+      right: 20;
+      img {
         max-width: 40px;
       }
-      opacity: 0.9;
-      &:hover {
-        cursor: pointer;
-        opacity: 0.6;
-      }
+    }
+    opacity: 0.9;
+    &:hover {
+      cursor: pointer;
+      opacity: 0.6;
     }
   }
   div#header {
@@ -73,7 +77,7 @@ body {
         }
         div#source {
           font-size: 12px;
-          font-style: italic;;
+          font-style: italic;
           text-align: center;
           color: #555;
         }
@@ -95,7 +99,7 @@ body {
         div#source {
           padding-bottom: 15px;
           font-size: 16px;
-          font-style: italic;;
+          font-style: italic;
           text-align: center;
           color: #555;
         }
@@ -149,6 +153,6 @@ body {
   }
 }
 
-.hidden{
+.hidden {
   display: none;
 }
