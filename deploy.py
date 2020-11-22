@@ -4,18 +4,24 @@ from botocore.config import Config
 
 os.environ["AWS_PROFILE"] = "will"
 s3 = boto3.resource('s3')
-filenames = [
-    'index.html',
-    'index.css',
-    'counties.svg',
-    'orange_vermont.svg',
-    'windsor_vermont.svg',
-    'grafton_new_hampshire.svg',
-    'sullivan_new_hampshire.svg',
+
+FILENAMES = [
+    'charts/grafton_new_hampshire_cases.svg',
+    'charts/grafton_new_hampshire_cases_adjusted.svg',
+    'charts/grafton_new_hampshire_deaths.svg',
+    'charts/grafton_new_hampshire_deaths_adjusted.svg',
+    'charts/orange_vermont_cases.svg',
+    'charts/orange_vermont_cases_adjusted.svg',
+    'charts/orange_vermont_deaths.svg',
+    'charts/orange_vermont_deaths_adjusted.svg',
+    'charts/sullivan_new_hampshire_cases.svg',
+    'charts/sullivan_new_hampshire_cases_adjusted.svg',
+    'charts/sullivan_new_hampshire_deaths.svg',
+    'charts/sullivan_new_hampshire_deaths_adjusted.svg',
+    'charts/windsor_vermont_cases.svg',
+    'charts/windsor_vermont_cases_adjusted.svg',
+    'charts/windsor_vermont_deaths.svg',
+    'charts/windsor_vermont_deaths_adjusted.svg',
 ]
-for filename in filenames:
-    s3.Bucket('uppervalleycovid.org').put_object(
-        Key=filename,
-        Body=open(filename, 'rb'),
-        ContentDisposition='inline'
-        )
+
+[s3.Bucket('uppervalleycovid.org').upload_file(filename, filename.strip('charts/')) for filename in FILENAMES]

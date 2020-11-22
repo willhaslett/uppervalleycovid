@@ -88,17 +88,24 @@ body div#header div#title-container #switches-container #label-right {
     text-align: center;
     color: #333;
   }
-  body div#header div#title-container div#source {
-    font-size: 12px;
-    font-style: italic;
-    text-align: center;
-    color: #555;
-  }
   body div#header div#title-container div#subtitle {
     padding-bottom: 7px;
     font-size: 16px;
     text-align: center;
     color: #333;
+  }
+  body div#header div#title-container div#source {
+    padding-bottom: 5px;
+    font-size: 12px;
+    font-style: italic;
+    text-align: center;
+    color: #555;
+  }
+  body div#header div#title-container div#last-updated {
+    font-size: 12px;
+    font-style: italic;
+    text-align: center;
+    color: #555;
   }
 }
 @media only screen and (min-width: 601px) {
@@ -109,18 +116,24 @@ body div#header div#title-container #switches-container #label-right {
     text-align: center;
     color: #333;
   }
-  body div#header div#title-container div#source {
-    padding-bottom: 15px;
-    font-size: 16px;
-    font-style: italic;
-    text-align: center;
-    color: #555;
-  }
   body div#header div#title-container div#subtitle {
     padding-bottom: 12px;
     font-size: 18px;
     text-align: center;
     color: #333;
+  }
+  body div#header div#title-container div#source {
+    padding-bottom: 2px;
+    font-size: 14px;
+    font-style: italic;
+    text-align: center;
+    color: #555;
+  }
+  body div#header div#title-container div#last-updated {
+    font-size: 14px;
+    font-style: italic;
+    text-align: center;
+    color: #555;
   }
 }
 body div#charts-container {
