@@ -24,4 +24,4 @@ FILENAMES = [
     'charts/windsor_vermont_deaths_adjusted.svg',
 ]
 
-[s3.Bucket('uppervalleycovid.org').upload_file(filename, filename.strip('charts/')) for filename in FILENAMES]
+[s3.Bucket('uppervalleycovid.org').upload_file(filename, filename) for filename in FILENAMES]
